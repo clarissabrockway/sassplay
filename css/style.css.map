@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,oZAA8d,CAAC,MAAM,CAAE,CAAC,CAAC,OAAO,CAAE,CAAC,CAAC,MAAM,CAAE,CAAC,CAAC,SAAS,CAAE,IAAI,CAAE,IAAI,CAAE,OAAO,CAAE,cAAc,CAAE,QAAQ,CAAE,WAAW,CAAE,MAAM,CCG3kB,iBAAuB,CACtB,WAAW,CCEL,kBAAY,CDCnB,MAAO,CACN,KAAK,CCLM,IAAI,CDMf,WAAW,CCFL,sBAAW,CDKlB,CAAE,CACD,KAAK,CCZM,OAAO,CDenB,OAAQ,CACP,KAAK,CCfK,OAAO",
+"sources": ["../sass/reset.scss","../sass/style.scss","../sass/basics.scss"],
+"names": [],
+"file": "style.css"
+}

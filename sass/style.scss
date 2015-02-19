@@ -1,0 +1,19 @@
+@import "reset.scss";
+@import "basics.scss";
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $bree;
+}
+
+body p {
+	color: $dark-grey;
+	font-family: $open;
+}
+
+a {
+	color: $light-red;
+}
+
+a:hover {
+	color: $dark-red;
+}
