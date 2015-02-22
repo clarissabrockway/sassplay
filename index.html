@@ -3,7 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <link href='http://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:400,600' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="stylesheets/style.css">
+<script type="text/javascript" src="js/fun-stuff.js"></script>
 <title>Auntie Crab's Cupcakes</title>
 </head>
 
@@ -14,16 +16,68 @@
 			<div class="heading">Auntie Crab's Cupcakes</div>
 		</header>
 		<nav>
-			<a href="index.html" alt="Home" title="Home">Home</a>
-			<a href="flavors.html" alt="Flavors" title="Flavors">Flavors</a>
-				<div class="subnav">
-					<a href="spring-summer-flavors.html" alt="Spring/Summer Flavors" title="Spring/Summer Flavors">Spring/Summer Flavors</a>
-					<a href="fall-winter-flavors.html" alt="Fall/Winter Flavors" title="Fall/Winter Flavors">Fall/Winter Flavors</a>
-				</div>
-			<a href="location.html" alt="Location" title="Location">Location</a>
+			<a href="#about" alt="About Us" title="About Us">About Us</a>
+			<img aria-hidden="true" src="images/mini-crab.png" />
+			<a href="#flavors" alt="Flavors" title="Flavors">Flavors</a>
+			<img aria-hidden="true" src="images/mini-crab.png" />
+			<a href="#location" alt="Location" title="Location">Location</a>
 		</nav>
-		<h1>Welcome!</h1>
-		<p>Do you want some cupcakes? <span class="blurry"><!-- You peeked! -->Heck</span> yeah, you do! Come to Auntie Crab's and get some.</p>
+		<div class="content">
+			<div id="about">
+				<h2>Welcome!</h2>
+				<p>Do you want some cupcakes? <span class="crab-block"><!-- You peeked! -->Heck</span> yeah, you do! Come to Auntie Crab's for the best imaginary cupcakes you will ever have. Most cupcake bakeries produce cupcakes that or too sweet and use too much frosting. At Auntie Crab's, we have found the perfect frosting:cake ratio. It is perfect because we said so.</p>
+				<p>Auntie Crab's Cupcakes was established in February 2015 (it was a Thursday) when our fearless founder decided she wanted to play with SASS and make a cupcake in Adobe Illustrator. Since that day, she has used this page as a creative outlet to experiment with CSS3, PHP, Javascript, and SVG animation.</p>
+				<p>Be sure to check out our <a href="#flavors" alt="flavors" title="flavors">flavors</a>. Once you've picked out which ones you want, read up on our fabulous <a href="#location" alt="location" title="location">location</a>. Have a question? Too bad.</p>
+			</div>
+			<div id="flavors">
+				<h2>Flavors</h2>
+				<p>Getting right down to business, eh? Good for you! At Auntie Crab's, we have plenty of <span class="crab-block"><!-- You peeked! -->darn</span> good flavors to choose from. Our menu is always growing, so come back often to see what we're serving up!</p>
+				<p>Ready to pick up your cupcakes? <a href="#location" alt="Our location" title="Our location">Come find us</a>!</p>
+				<ul>
+					<li>
+						<img aria-hidden="true" src="images/vanilla.png" />
+						<h3>Illustrator Iced Vanilla</h3>
+						<p>The one that started it all. Made from scratch in Illustrator using the exciting Pen and Gradient Tools in addition to the occasional Rectangle and Symbol.</p>
+					</li>
+					<li>
+						<img aria-hidden="true" src="images/strawberry.png" />
+						<h3>SVG Strawberry</h3>
+						<p>Our founder's first attempt at crafting an SVG and animating it. Baked fresh in Illustrator, exported, optimized (with the help of <a href="http://petercollingridge.appspot.com/svg-editor" alt="SVG editor" title="SVG Editor">Peter Collingridge's awesome SVG Editor</a>), and animated using CSS3.</p>
+					</li>
+					<li>
+						<img aria-hidden="true" src="images/saffron.png" />
+						<h3>SASS Saffron-Orange</h3>
+						<p>Our founder's first foray into the world of SASS can be seen right here, right now! Well, not exactly, being that it's a preprocessor.</p>
+					</li>
+					<li>
+						<img aria-hidden="true" src="images/honey.png" />
+						<h3>HTML5 Honey-Almond</h3>
+						<p>Being an industry norm, this very page you're looking at is built using this classic standby.</p>
+					</li>
+					<li>
+						<img aria-hidden="true" src="images/coconut.png" />
+						<h3>CSS3 Coconut</h3>
+						<p>Now with more pseudo-classes! The goofy little animations in the header and various small touches use this fun take on something familiar.</p>
+					</li>
+					<li class="coming-soon">
+						<img aria-hidden="true" src="images/peanut-butter.png" />
+						<h3>PHP Peanut Butter</h3>
+						<p>PHP Peanut Butter is going to be really awesome, but it isn't ready yet. Please check back soon!</p>
+					</li>
+					<li class="coming-soon">
+						<img aria-hidden="true" src="images/jaffa.png" />
+						<h3>Javascript Jaffa Cake</h3>
+						<p>Javascript Jaffa Cake is going to be really awesome, but it isn't ready yet. Please check back soon!</p>
+					</li>
+				</ul>
+			</div>
+			<div class="location">
+				<h2>Location</h2>
+				<p>Auntie Crab's Cupcakes is located in a small seaside town in Clarissa Brockway's brain. The décor is amazing, trust me. Clarissa is a front-end developer living and working in Dallas, Texas.</p>
+				<p>This page is a playground of sorts and a fun way for her to teach herself new front-end development techniques.</p>
+				<p>Are you craving cupcakes now? Take a peek at Clarissa's CV. She sometimes brings cupcakes to work and she's willing to relocate!</p>
+			</div>
+		</div>
 	</div>
 </body>
 
