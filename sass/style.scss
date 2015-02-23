@@ -114,8 +114,10 @@ header {
 }
 
 #flavors {
+	margin: 3em 0 0;
+	
 	ul {
-		margin:2em 0 0;
+		margin: 2em 0 0;
 	}
 	li {
 		float: left;
@@ -136,6 +138,7 @@ header {
 		
 		p {
 			float: left;
+			font-size: .9em;
 			min-height: 98px;
 			width: 66%;
 		}
@@ -144,4 +147,5 @@ header {
 
 #location {
 	clear: both;
+	margin: 3em 0 0;
 }
