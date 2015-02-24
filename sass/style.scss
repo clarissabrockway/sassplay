@@ -76,6 +76,22 @@ a {
 				color: $dark-teal;
 			}
 		}
+		
+		@media screen and (max-width: $breakmid) {
+			padding: 0;
+			
+			a {
+				margin: 1em;
+			}
+		}
+		
+		@media screen and (max-width: $breaksmall) {
+			font-size: .8em;
+			
+			a {
+				margin: 1em .4em;
+			}
+		}
 	}
 	
 	.content {
@@ -83,15 +99,19 @@ a {
 		box-sizing: border-box;
 		margin: 0 auto;
 		max-width: 1000px;
-		padding:50px;
+		padding: 50px;
 		
 		a {
-			color: $light-red;
+			color: $dark-teal;
 			font-family: $open;
 			
 			&:hover {
-				color: $dark-red;
+				color: $blue;
 			}
+		}
+		
+		@media screen and (max-width: $breaksmall) {
+			padding: 20px 5%;
 		}
 	}
 }
@@ -110,6 +130,14 @@ header {
 	
 	.heading {
 		text-shadow: 2px 2px 5px $light-teal;
+	}
+	
+	@media screen and (max-width: $breaksmall) {
+		font-size: 1.8em;
+		
+		.heading {
+			margin: 1em 0;
+		}
 	}
 }
 
@@ -139,13 +167,130 @@ header {
 		p {
 			float: left;
 			font-size: .9em;
-			min-height: 98px;
 			width: 66%;
 		}
+		
+		&.coming-soon {
+			position: relative;
+			
+			img{
+				opacity: .5;
+			}
+		}
+		&.coming-soon:before {
+			color: #fff;
+			content: "Coming soon";
+			@include rotate(-25);
+			left: 2px;
+			position: absolute;
+			font-family: $bree;
+			top: 3.2em;
+			z-index: 2;
+		}
+		
+		@media screen and (max-width: $breaklarge) {
+			clear: both;
+			float: none;
+			width: 100%;
+			
+			h3 {
+				margin: 20px 0 10px;
+			}
+		}
+		
+		@media screen and (max-width: $breaksmall) {	
+			h3 {
+				float: none;
+				text-align: center;
+				width: 100%;
+			}
+			
+			p {
+				float: none;
+				width: 100%;
+			}
+			.image {
+				margin: 0 auto;
+				text-align: center;
+				width: 100%;
+				
+				img {
+					float: none;
+					margin: 0;
+				}
+			}
+			
+			&.coming-soon:before {
+				left: 50%;
+				margin-left: -45px;
+			}
+		}
 	}
-}
+	li:nth-child(2n+1) {
+		clear: both;
+	}
+}	
 
 #location {
 	clear: both;
-	margin: 3em 0 0;
+	margin: 0 0 3em;
+	position: relative;
+	top: 3em;
+}
+
+footer {
+	background: $dark-teal;
+	color: $light-teal;
+	font-family: $open;
+	font-size: .9em;
+	margin: 0 auto;
+	min-height: 50px;
+	max-width: 1000px;
+	
+	.copy {
+		float: left;
+		margin: 1em 50px;
+	}
+	
+	.social {
+		float: right;
+		margin: 0 50px 0 0;
+		
+		span {
+			position: relative;
+			top: -3px;
+		}
+		
+		a {
+			display: inline-block;
+			opacity: .6;
+			position: relative;
+			top: 8px;
+			
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+	
+	@media screen and (max-width: $breakmid) {
+		padding: 1em 0 2em;
+		
+		.copy, .social {
+			float: none;
+			margin: 0 auto;
+			padding: 1em 0 0;
+			text-align: center;
+			
+			a {
+				margin: 0 1em;
+			}
+		}
+	}
+	
+	@media screen and (max-width: $breaksmall) {
+		.social span {
+			display: none;
+		}
+	}
 }
